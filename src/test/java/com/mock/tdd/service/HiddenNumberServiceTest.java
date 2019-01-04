@@ -1,4 +1,4 @@
-package com.mock.tdd;
+package com.mock.tdd.service;
 
 import com.mock.tdd.service.HiddenNumberService;
 import org.junit.Before;
