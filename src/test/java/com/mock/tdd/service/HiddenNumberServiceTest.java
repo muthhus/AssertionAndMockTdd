@@ -1,11 +1,11 @@
-package com.mock.tdd;
+package com.mock.tdd.service;
 
-import com.mock.tdd.service.HiddenNumberService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -18,6 +18,11 @@ public class HiddenNumberServiceTest {
     @Before
     public void init(){
         hiddenNumberService = mock(HiddenNumberService.class);
+    }
+
+    @Test
+    public void hiddenNumberServiceTest(){
+        assertTrue(hiddenNumberService instanceof HiddenNumberService);
     }
 
     @Test

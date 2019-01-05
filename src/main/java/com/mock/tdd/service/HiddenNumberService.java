@@ -9,4 +9,6 @@ public interface HiddenNumberService {
     public int subtract(int a, int b);
 
     public int findHiddenNumber(int total);
+
+    int calculate(int i, int i1);
 }
